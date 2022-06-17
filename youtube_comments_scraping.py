@@ -13,7 +13,7 @@ def main():
     api_service_name = "youtube"
     api_version = "v3"
     client_secrets_file = "client_secret_2.json" #This file is the json file that you download from Google API
-    DEVELOPER_KEY = "AIzaSyBAdbwWqgEWjeJUtJjVNdhK0QM3NM7buqY" #This is your own API Key
+    DEVELOPER_KEY = "..." #This is your own API Key
     youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=DEVELOPER_KEY)
     videoId = '1PYpbiFLnqs' #This is the video ID
     request = youtube.commentThreads().list(
